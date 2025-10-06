@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestor de Tareas</h1>
+
+  <div class="input-container">
+    <input type="text" id="taskInput" placeholder="Escribe una nueva tarea...">
+    <button id="addTaskBtn">Agregar</button>
+  </div>
+
+  <div id="message" class="empty-message">No hay tareas registradas.</div>
+
+  <div id="boards" class="boards" style="display: none;">
+    <div class="board todo">
+      <h2>To Do</h2>
+      <div id="todoList"></div>
+    </div>
+    <div class="board doing">
+      <h2>Doing</h2>
+      <div id="doingList"></div>
+    </div>
+    <div class="board done">
+      <h2>Done</h2>
+      <div id="doneList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
